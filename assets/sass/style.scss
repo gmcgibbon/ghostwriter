@@ -2,7 +2,7 @@
 // Colours //
 // ============================================================ //
 
-$primary: #F03838;
+$primary: #9400D3;
 $secondary: #303030;
 $background: #FEFEFE;
 
@@ -107,7 +107,7 @@ table {
     margin-bottom:40px;
     width: 100%;
 
-    tbody > tr:nth-child(odd) > td, 
+    tbody > tr:nth-child(odd) > td,
     tbody > tr:nth-child(odd) > th {
         background-color: #f7f7f3;
     }
@@ -204,6 +204,9 @@ table {
 /* ============================================================ */
 
 .site-header {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     padding: 100px 0 0;
     overflow: auto;
     text-align: center;
@@ -247,6 +250,7 @@ table {
     font-size: 14px;
     font-weight: 700;
     margin: 0 10px;
+    background: $background;
 
     a:hover { color: #424242; }
 }
@@ -592,7 +596,7 @@ table {
         margin-top: 5px;
     }
 
-    .post-date, 
+    .post-date,
     .blog-description,
     .author-meta {
         margin-top: 20px;
@@ -661,13 +665,13 @@ table {
         line-height: 1.2;
     }
 
-    .post-date, 
+    .post-date,
     .blog-description,
     .author-meta {
         line-height: 1.6;
     }
 
-    .post-date, 
+    .post-date,
     .blog-description,
     .author-meta {
         margin-top: 10px;

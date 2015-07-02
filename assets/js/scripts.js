@@ -74,14 +74,14 @@ jQuery(function($) {
                 $ajaxContainer.html($newContent);
                 $ajaxContainer.fadeIn(500);
 
-                NProgress.done();
+                XProgress.done();
 
                 loading = false;
                 showIndex = false;
             });
         }).fail(function() {
             // Request fail
-            NProgress.done();
+            XProgress.done();
             location.reload();
         });
     });
@@ -105,7 +105,7 @@ jQuery(function($) {
                     showIndex = true;
                 }
 
-                NProgress.start();
+                XProgress.start();
 
                 History.pushState({}, title, url);
             } else {
@@ -113,20 +113,20 @@ jQuery(function($) {
                 if ($(this).hasClass('js-show-index')) {
                     $('html, body').animate({'scrollTop': 0});
 
-                    NProgress.start();
+                    XProgress.start();
 
                     $latestPost.fadeOut(300, function() {
                         $postIndex.fadeIn(300);
-                        NProgress.done();
+                        XProgress.done();
                     });
                 } else {
                     $('html, body').animate({'scrollTop': 0});
 
-                    NProgress.start();
+                    XProgress.start();
 
                     $postIndex.fadeOut(300, function() {
                         $latestPost.fadeIn(300);
-                        NProgress.done();
+                        XProgress.done();
                     });
                 }
             }

@@ -41,7 +41,7 @@ p {
   margin: 0 0 30px; }
 
 a {
-  color: #F03838;
+  color: #9400D3;
   text-decoration: none; }
 
 ul, ol {
@@ -165,10 +165,10 @@ table {
   padding: 10px 12px;
   text-transform: uppercase; }
   .button:hover {
-    background: #F03838; }
+    background: #9400D3; }
 
 .button-square {
-  background: #F03838;
+  background: #9400D3;
   color: #FFF;
   float: left;
   font-size: 17px;
@@ -181,6 +181,9 @@ table {
 /* Site Header */
 /* ============================================================ */
 .site-header {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   padding: 100px 0 0;
   overflow: auto;
   text-align: center;
@@ -198,7 +201,7 @@ table {
   text-transform: uppercase; }
   .site-title a {
     float: left;
-    background: #F03838;
+    background: #9400D3;
     color: #FEFEFE;
     padding: 5px 10px 6px; }
     .site-title a:hover {
@@ -217,7 +220,9 @@ table {
   display: inline-block;
   font-size: 14px;
   font-weight: 700;
-  margin: 0 10px; }
+  margin: 0 0 0 10px;
+  padding: 3px 8px 4px;
+  background: #FFF; }
   .site-nav-item a:hover {
     color: #424242; }
 
@@ -260,7 +265,7 @@ table {
     color: #AEADAD; }
   .post-date a:hover,
   .blog-description a:hover {
-    color: #F03838; }
+    color: #9400D3; }
   .post-date:after,
   .blog-description:after {
     border-bottom: 1px dotted #303030;
@@ -270,7 +275,7 @@ table {
     width: 100px; }
 
 .post-content a:hover {
-  border-bottom: 1px dotted #F03838;
+  border-bottom: 1px dotted #9400D3;
   padding: 0 0 2px; }
 .post-content:last-child {
   margin-bottom: 0; }
@@ -295,7 +300,7 @@ table {
 .share {
   float: right; }
   .share a {
-    background: #F03838;
+    background: #9400D3;
     color: #FFF;
     display: inline-block;
     font-size: 16px;
@@ -313,7 +318,7 @@ table {
 .newer-posts,
 .older-posts {
   float: left;
-  background: #F03838;
+  background: #9400D3;
   color: #FEFEFE;
   font-size: 14px;
   font-weight: 600;
@@ -351,10 +356,10 @@ table {
     padding: 20px 5px; }
     .post-stub a:hover {
       background: #FCF5F5;
-      color: #F03838;
+      color: #9400D3;
       padding: 20px 12px; }
       .post-stub a:hover .post-stub-tag {
-        background: #F03838; }
+        background: #9400D3; }
 
 .post-stub-tag {
   background: #303030;
@@ -430,7 +435,7 @@ table {
   .author-meta a {
     color: #AEADAD; }
   .author-meta a:hover {
-    color: #F03838; }
+    color: #9400D3; }
 
 .author-bio {
   margin: 20px auto 0;
@@ -472,14 +477,14 @@ table {
 /* NProgress */
 /* ============================================================ */
 #nprogress .bar {
-  background: #F03838; }
+  background: #9400D3; }
 
 #nprogress .peg {
-  box-shadow: 0 0 10px #F03838, 0 0 5px #F03838; }
+  box-shadow: 0 0 10px #9400D3, 0 0 5px #9400D3; }
 
 #nprogress .spinner-icon {
-  border-top-color: #F03838;
-  border-left-color: #F03838; }
+  border-top-color: #9400D3;
+  border-left-color: #9400D3; }
 
 /* ============================================================ */
 /* Media Queries */
