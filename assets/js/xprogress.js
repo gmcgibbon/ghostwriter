@@ -32,7 +32,7 @@ XProgress.updateCover = function() {
       if (XProgress.lastCover != cover) {
 
           XProgress.lastCover = cover;
-          $this.css('background', 'url(' + cover + ') no-repeat fixed');
+          $this.css('background-image', 'url(' + cover + ')');
       }
     });
 };

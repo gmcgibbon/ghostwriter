@@ -123,13 +123,13 @@ table {
 }
 
 ::selection {
-    background: #FFF5B8;
+    background: $primary;
     color: #000;
     display: block;
 }
 
 ::-moz-selection {
-    background: #FFF5B8;
+    background: $primary;
     color: #000;
     display: block;
 }
@@ -204,6 +204,10 @@ table {
 /* ============================================================ */
 
 .site-header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -249,7 +253,8 @@ table {
     display: inline-block;
     font-size: 14px;
     font-weight: 700;
-    margin: 0 10px;
+    margin: 0 0 0 10px;
+    padding: 3px 8px 4px;
     background: $background;
 
     a:hover { color: #424242; }

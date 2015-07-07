@@ -12,11 +12,18 @@
 
     {{! Page Meta }}
     <title>{{meta_title}}</title>
+    <meta name="author" content="Gannon McGibbon" />
     <meta name="description" content="{{meta_description}}" />
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+     {{! Icons }}
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{asset "images/favicon-192x192.png"}}">
+    <link rel="icon" type="image/png" sizes="32x32"    href="{{asset "images/favicon-32x32.png"}}">
+    <link rel="icon" type="image/png" sizes="96x96"    href="{{asset "images/favicon-96x96.png"}}">
+    <link rel="icon" type="image/png" sizes="16x16"    href="{{asset "images/favicon-16x16.png"}}">
 
     {{! Styles }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
