@@ -119,6 +119,12 @@ jQuery(function($) {
                         $postIndex.fadeIn(300);
                         XProgress.done();
                     });
+                } else if ($(this).hasClass('js-ajax-link')) {
+                    $('html, body').animate({'scrollTop': 0});
+
+                    XProgress.start();
+
+                    XProgress.done();
                 } else {
                     $('html, body').animate({'scrollTop': 0});
 
