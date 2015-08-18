@@ -122,6 +122,10 @@ table {
     tr { border-bottom: 1px dotted #AEADAD; }
 }
 
+code {
+  background: #F1F0EA;
+}
+
 ::selection {
     background: $primary;
     color: #000;
@@ -372,7 +376,7 @@ table {
 
 .page-number { display: none; }
 
-#disqus_thread { padding-top: 50px; } 
+#disqus_thread { padding-top: 50px; }
 
 /* ============================================================ */
 /* Post Index */

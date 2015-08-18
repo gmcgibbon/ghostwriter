@@ -112,6 +112,9 @@ table {
   table tr {
     border-bottom: 1px dotted #AEADAD; }
 
+code {
+  background: #F1F0EA; }
+
 ::selection {
   background: #9400D3;
   color: #000;
