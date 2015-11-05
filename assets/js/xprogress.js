@@ -4,7 +4,6 @@ window.XProgress = {};
 // Initialize Progress extensions
 XProgress.init = function() {
     this.updateCover();
-    this.updateCoverTimeout = 600;
 };
 
 // Start progress bar
@@ -16,8 +15,7 @@ XProgress.start = function() {
 XProgress.done = function() {
 
   Prism.highlightAll();
-  NProgress.done(); // Complete progress bar
-  setTimeout(this.updateCover, this.updateCoverTimeout);
+  NProgress.done();
 };
 
 // Update cover image
