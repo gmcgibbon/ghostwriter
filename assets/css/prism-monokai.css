@@ -223,28 +223,3 @@ pre code {
   white-space: pre;
   display: block;
 }
-
-/* line 277, syntax-highlighting.scss */
-pre.language-markup:before {
-  content: 'HTML';
-}
-
-/* line 278, syntax-highlighting.scss */
-pre.language-css:before {
-  content: 'CSS';
-}
-
-/* line 279, syntax-highlighting.scss */
-pre.language-javascript:before {
-  content: 'JavaScript';
-}
-
-/* line 280, syntax-highlighting.scss */
-pre.language-php:before {
-  content: 'PHP';
-}
-
-/* line 281, syntax-highlighting.scss */
-pre.language-scss:before {
-  content: 'SCSS (Sass / Compass)';
-}
