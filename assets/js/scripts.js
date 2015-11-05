@@ -57,7 +57,7 @@ jQuery(function($) {
 
             $('html, body').animate({'scrollTop': 0});
 
-            $ajaxContainer.fadeOut(300, function() {
+            $ajaxContainer.fadeOut(400, function() {
                 $latestPost = $newContent.filter('#latest-post');
                 $postIndex = $newContent.filter('#post-index');
 
@@ -72,7 +72,7 @@ jQuery(function($) {
                 $newContent.fitVids();
 
                 $ajaxContainer.html($newContent);
-                $ajaxContainer.fadeIn(300, XProgress.updateCover);
+                $ajaxContainer.fadeIn(400, XProgress.updateCover);
 
                 XProgress.done();
 
