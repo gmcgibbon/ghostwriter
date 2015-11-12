@@ -112,7 +112,7 @@ table {
   table tr {
     border-bottom: 1px dotted #AEADAD; }
 
-code {
+code, pre {
   background: #2A2A2A;
   color: #FFF;
   padding: 3px;
