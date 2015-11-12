@@ -78,8 +78,8 @@ jQuery(function($) {
 
                 $ajaxContainer.html($newContent);
                 $ajaxContainer.fadeIn(400, function() {
+                  Helper.highlightAll();
                   Helper.emojifyElement(this);
-                  Helper.highlightElement(this);
                   Helper.updateCover();
                   $latestPost = $('#latest-post');
                   $postIndex  = $('#post-index');

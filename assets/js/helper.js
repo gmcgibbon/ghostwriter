@@ -4,9 +4,9 @@ window.Helper = {};
 // Initialize operations on
 // non-ajax document content
 Helper.init = function() {
-    this.updateCover();
-    this.highlightAll();
     this.emojifyAll();
+    this.highlightAll();
+    this.updateCover();
 };
 
 // Copy Prism method references to helper
