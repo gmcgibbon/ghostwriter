@@ -17,6 +17,11 @@ jQuery(function($) {
     });
 
     /* ============================================================ */
+    /* init Helper to cover content already included on document */
+    /* ============================================================ */
+    Helper.init();
+
+    /* ============================================================ */
     /* Ajax Loading */
     /* ============================================================ */
 
@@ -72,16 +77,22 @@ jQuery(function($) {
                 $newContent.fitVids();
 
                 $ajaxContainer.html($newContent);
-                $ajaxContainer.fadeIn(400, XProgress.updateCover);
+                $ajaxContainer.fadeIn(400, function() {
+                  Helper.emojifyElement(this);
+                  Helper.highlightElement(this);
+                  Helper.updateCover();
+                  $latestPost = $('#latest-post');
+                  $postIndex  = $('#post-index');
+                });
 
-                XProgress.done();
+                NProgress.done();
 
                 loading = false;
                 showIndex = false;
             });
         }).fail(function() {
             // Request fail
-            XProgress.done();
+            NProgress.done();
             location.reload();
         });
     });
@@ -96,7 +107,7 @@ jQuery(function($) {
 
             // If the requested url is not the current states url push
             // the new state and make the ajax call.
-            if (url !== currentState.url) {
+            if (url.replace(/\/$/, "") !== currentState.url.replace(/\/$/, "")) {
                 loading = true;
 
                 // Check if we need to show the post index after we've
@@ -105,7 +116,7 @@ jQuery(function($) {
                     showIndex = true;
                 }
 
-                XProgress.start();
+                NProgress.start();
 
                 History.pushState({}, title, url);
             } else {
@@ -113,26 +124,20 @@ jQuery(function($) {
                 if ($(this).hasClass('js-show-index')) {
                     $('html, body').animate({'scrollTop': 0});
 
-                    XProgress.start();
+                    NProgress.start();
 
                     $latestPost.fadeOut(300, function() {
                         $postIndex.fadeIn(300);
-                        XProgress.done();
+                        NProgress.done();
                     });
-                } else if ($(this).hasClass('js-ajax-link')) {
-                    $('html, body').animate({'scrollTop': 0});
-
-                    XProgress.start();
-
-                    XProgress.done();
                 } else {
                     $('html, body').animate({'scrollTop': 0});
 
-                    XProgress.start();
+                    NProgress.start();
 
                     $postIndex.fadeOut(300, function() {
                         $latestPost.fadeIn(300);
-                        XProgress.done();
+                        NProgress.done();
                     });
                 }
             }
