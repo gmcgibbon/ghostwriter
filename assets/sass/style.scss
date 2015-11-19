@@ -129,6 +129,10 @@ code, pre {
   font-size: 90%;
 }
 
+pre {
+  overflow: hidden !important;
+}
+
 ::selection {
     background: $primary;
     color: #000;

@@ -118,6 +118,9 @@ code, pre {
   padding: 3px;
   font-size: 90%; }
 
+pre {
+  overflow: hidden !important; }
+
 ::selection {
   background: #9400D3;
   color: #000;
