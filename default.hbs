@@ -80,7 +80,14 @@
         document.write('<script type="text/javascript" src="{{asset "js/jquery-1.11.3.min.js"}}"></'+'script>');
     }
     </script>
-
+    <script type="text/javascript">
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = '//gannon.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+    </script>
     <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/emoji-images.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/jquery.history.js"}}"></script>
