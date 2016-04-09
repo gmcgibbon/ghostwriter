@@ -51,7 +51,7 @@ Helper.emojifyElement = function(elem, size) {
 
 // Initialize DISQUS on posts
 Helper.resetDisqus = function() {
-  if (! window.DISQUS) { return; }
+  if (! window.DISQUS || ! $('#disqus_thread')[0]) { return; }
   DISQUS.reset({
     reload: true,
     config: disqus_config
