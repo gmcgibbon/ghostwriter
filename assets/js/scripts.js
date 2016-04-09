@@ -81,6 +81,7 @@ jQuery(function($) {
                   Helper.highlightAll();
                   Helper.emojifyElement(this);
                   Helper.updateCover();
+                  Helper.resetDisqus();
                   $latestPost = $('#latest-post');
                   $postIndex  = $('#post-index');
                 });

@@ -48,3 +48,12 @@ Helper.emojifyAll = function(size) {
 Helper.emojifyElement = function(elem, size) {
   elem.innerHTML = this.emojifyString(elem.innerHTML, size);
 };
+
+// Initialize DISQUS on posts
+Helper.resetDisqus = function() {
+  if (! window.DISQUS) { return; }
+  DISQUS.reset({
+    reload: true,
+    config: disqus_config
+  });
+}
